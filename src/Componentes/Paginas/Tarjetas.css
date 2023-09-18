@@ -1,0 +1,9 @@
+.Tarjetas{
+    border: 5px solid #223142;
+    padding: 10px;
+    margin: 10px;
+    width: 250px;
+    left: 300px;
+    text-align: center;
+    background-color: antiquewhite;
+}

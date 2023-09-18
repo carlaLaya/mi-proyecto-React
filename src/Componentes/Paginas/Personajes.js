@@ -1,27 +1,37 @@
 import './Personajes.css';
 import Navegacion from '../Navegacion/Navegacion.js';
-import { useState } from 'react';
-import Card from '../Card/Card';
+import Tarjetas from './Tarjetas.js';
+//import { useState } from 'react';
+
 
 export default function Personajes() {
-    let [itemMenu,setItemMenu]=useState("Personajes")
+    //let [itemMenu,setItemMenu]=useState("Personajes")
     return(
-        <>
-            <Navegacion itemMenu={itemMenu}/>
-            <h2>Filters</h2>
-            <p>aca irian los filtros</p>
-            <section className='grid-container' >
-                 <Card />
-                 <Card />
-                 <Card />
-                 <Card />
-                 <Card />
-                 <Card />
-                 <Card />
-                 <Card />
-                 <Card />
-            </section>
-        </>
+        <div>
+            <Navegacion />
+            <h2>Filtros</h2>
+            <div className='grid-container'>
+            <Tarjetas />
+            <Tarjetas />
+            <Tarjetas />
+            <Tarjetas />
+            <Tarjetas />
+            <Tarjetas />
+            <Tarjetas />
+            <Tarjetas />
+            <Tarjetas />
+            <Tarjetas />
+            <Tarjetas />
+            <Tarjetas />
+            <Tarjetas />
+            <Tarjetas />
+            <Tarjetas />
+            <Tarjetas />
+            <Tarjetas />
+            <Tarjetas />
+            <Tarjetas />
+            <Tarjetas />
+            </div>
+        </div>
     )
 };
-

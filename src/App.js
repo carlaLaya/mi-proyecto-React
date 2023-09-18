@@ -6,7 +6,7 @@ import './App.css';
 import React from 'react';
 //importo carpeta de componentes
 //import Boton from './Componentes/Boton/Boton.js'
-//import Footer from './Componentes/Footer/Footer.js';
+import Footer from './Componentes/Footer/Footer.js';
 import Personajes from './Componentes/Paginas/Personajes.js';
 import Home from './Componentes/Paginas/Home.js';
 //import Navegacion from './Componentes/Navegacion/Navegacion.js';

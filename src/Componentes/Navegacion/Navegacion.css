@@ -1,17 +1,19 @@
 ul {
     color: #b1f0dc;
 }
-h4{
-    color: #b1f0dc;
+.titulo{
+    color: #6eccaf;
+    margin: 10px;
+    
 }
 header{
     padding: 50px; 
 }
 .bg-blue {
-    background-color: #223142;
+    background-color: #344D67;
+    justify-content: flex-end;
+    
 }
-.header-right{
-    float: right;
-  }
+
   
   

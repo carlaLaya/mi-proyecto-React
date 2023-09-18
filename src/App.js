@@ -1,5 +1,9 @@
-//importo hojas de estilo
-import './App.css';
+
+
+// If you want to start measuring performance in your app, pass a function
+// to log results (for example: reportWebVitals(console.log))
+// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
+//reportWebVitals();
 
 //importo paquete
 import React from 'react';
@@ -11,14 +15,13 @@ import Home from './Componentes/Paginas/Home.js';
 import Navegacion from './Componentes/Navegacion/Navegacion.js';
 import Contacto from './Componentes/Contacto/Contacto.js';
 
-  function App() {
-    return (
-  <div> 
-    <header>
-      {/*<h1 className='texto'>Hola React</h1>*/}
+function App() {
+    console.log()
+   return (
+  <>
+      {/*<h1 className='texto'>Hola React</h1>}
       {/*<Boton tituloBoton={"chau"}/>*/}
       {/*<p>Ricky y Morty</p>*/}
-      </header>
       <div class="container-header  d-flex flex-column justify-content-center">
       <div className="bg-text">
       <h1 className="row justify-content-center">Proyect Rick & Morty</h1>
@@ -33,8 +36,8 @@ import Contacto from './Componentes/Contacto/Contacto.js';
       {/*<Footer dato={nombre}/>*/}
       {/*<Boton tituloBoton={"Characters"}/> reutilizo y cambio elnombre del boton*/}
        {/* <Boton tituloBoton={"Contact"}/>reutilizo y cambio elnombre del boton*/}
-      </div>
-  </div>
-  );
+     </div>
+</>
+);
 } 
 export default App;

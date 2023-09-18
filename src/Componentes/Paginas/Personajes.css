@@ -1,5 +1,10 @@
+<<<<<<< HEAD
 .grid-container{
     display: grid;
     justify-content: center;
     grid-template-columns: auto auto auto auto;
+=======
+h2{
+    color: black;
+>>>>>>> 620fadef9f62876bd1aebfee9c317e88dcdf04be
 }

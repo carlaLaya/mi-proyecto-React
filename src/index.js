@@ -16,7 +16,6 @@ import Card from './Componentes/Card/Card';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-<<<<<<< HEAD
     <App/>
   </React.StrictMode>,
 )

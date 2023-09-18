@@ -1,17 +1,20 @@
 ul {
     color: #b1f0dc;
 }
-h4{
+.titulo{
     color: #b1f0dc;
+    justify-items: center ;
 }
 header{
     padding: 50px; 
 }
 .bg-blue {
     background-color: #223142;
+    justify-content: end;
+
 }
-.header-right{
-    float: right;
-  }
+.botons{
+    justify-content: end;
+}
   
   

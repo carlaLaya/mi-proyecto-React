@@ -2,26 +2,13 @@ ul {
     color: #b1f0dc;
 }
 .titulo{
-<<<<<<< HEAD
-    color: #6eccaf;
-    margin: 10px;
-    
-=======
     color: #b1f0dc;
     justify-items: center ;
->>>>>>> 620fadef9f62876bd1aebfee9c317e88dcdf04be
 }
 header{
     padding: 50px; 
 }
 .bg-blue {
-<<<<<<< HEAD
-    background-color: #344D67;
-    justify-content: flex-end;
-    
-}
-
-=======
     background-color: #223142;
     justify-content: end;
 
@@ -29,6 +16,5 @@ header{
 .botons{
     justify-content: end;
 }
->>>>>>> 620fadef9f62876bd1aebfee9c317e88dcdf04be
   
   

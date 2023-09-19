@@ -2,8 +2,9 @@
     border: 5px solid #223142;
     padding: 10px;
     margin: 10px;
-    width: 250px;
+    width: 300px;
     left: 300px;
     text-align: center;
-    background-color: antiquewhite;
+    background-color: #ffffffe6;
+    color: #6ECCAF;
 }

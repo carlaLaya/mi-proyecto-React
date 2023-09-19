@@ -1,6 +1,6 @@
 import './Navegacion.css';
 
-export default function Navegacion ({itemMenu}) {
+export default function Navegacion () {
     return(
       <header className="bg-blue">
           <div className="container-fluid justify-content-between align-items-end">

@@ -10,11 +10,13 @@ header{
 }
 .bg-blue {
     background-color: #344D67;
-    justify-content: end;
+    justify-content: space-between;
 
 }
 .botons{
     justify-content: end;
+    border: 2px solid #344D67;
 }
+
   
   

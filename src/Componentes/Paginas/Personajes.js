@@ -5,35 +5,27 @@ import Tarjetas from './Tarjetas.js';
 
 
 export default function Personajes() { 
-    let nombre=["Ricky Sanchez", "Morty Smith", "Summer Smith", "Beth Smith"];
+    const personaje=["Ricky Sanchez", "Morty Smith", "Summer Smith", "Beth Smith", "Pichila", "Malena", "Felipe", "Santiago"];
     //let [itemMenu,setItemMenu]=useState("Personajes")
-    return(
-        <div>
-            <Navegacion />
-            <h2>Filtros</h2>
+    //const [nombre,setNombre]=useState("Carla");
+    //creamos la funcion del estado
+  //const cambiarNombre=() =>{
+        //setNombre("Rosa");
+    //}
+    return (
+       <>
+         <Navegacion />
+         <h2>Filtros</h2>
+         {/*<h2>{cambiarNombre}</h2>
+            <Tarjetas nombrePersona={nombre} cambiarNombre={setNombre}/>
+            <button onClick={cambiarNombre}>Click</button>
+            <div/>
+    <Tarjetas nombrePersona={personaje[0]}/>*/}
             <div className='grid-container'>
-                {/*Agrego props a los componetens*/}
-            <Tarjetas dato={nombre[0]}/>
-            <Tarjetas dato={nombre[1]}/>
-            <Tarjetas dato={nombre[2]}/>
-            <Tarjetas dato={nombre[3]}/>
-            <Tarjetas />
-            <Tarjetas />
-            <Tarjetas />
-            <Tarjetas />
-            <Tarjetas />
-            <Tarjetas />
-            <Tarjetas />
-            <Tarjetas />
-            <Tarjetas />
-            <Tarjetas />
-            <Tarjetas />
-            <Tarjetas />
-            <Tarjetas />
-            <Tarjetas />
-            <Tarjetas />
-            <Tarjetas />
+            {personaje.map((personaje)=>{
+            return <Tarjetas nombrePersona={personaje}/>
+            })};
             </div>
-        </div>
-    )
-};
+        </>
+     )
+ };

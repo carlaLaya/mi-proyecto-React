@@ -6,8 +6,8 @@
   font-family: 'Raleway', sans-serif;
 }
 body{
-  opacity: 0.9;
   background-image: url(./fondo.jpg);
   background-attachment: fixed;
   background-size: cover;
 }
+

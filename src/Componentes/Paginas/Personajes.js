@@ -7,10 +7,10 @@ import Tarjetas from './Tarjetas.js';
 export default function Personajes() { 
     const personaje=["Ricky Sanchez", "Morty Smith", "Summer Smith", "Beth Smith", "Pichila", "Malena", "Felipe", "Santiago"];
     //let [itemMenu,setItemMenu]=useState("Personajes")
-    //const [nombre,setNombre]=useState("Carla");
+   //const [nombre,setNombre]=useState("Carla");
     //creamos la funcion del estado
-  //const cambiarNombre=() =>{
-        //setNombre("Rosa");
+ //const cambiarPersonaje=() =>{
+       //setNombre("Rosa");
     //}
     return (
        <>

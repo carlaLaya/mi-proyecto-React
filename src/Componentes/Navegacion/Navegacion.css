@@ -4,6 +4,8 @@ ul {
 .titulo{
     color: #b1f0dc;
     justify-items: center ;
+    font-weight: 300;
+    font-size: x-large;
 }
 header{
     padding: 50px; 

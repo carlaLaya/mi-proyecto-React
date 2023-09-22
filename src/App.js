@@ -12,6 +12,7 @@ import Home from './Componentes/Paginas/Home.js';
 import Navegacion from './Componentes/Navegacion/Navegacion.js';
 import Contacto from './Componentes/Contacto/Contacto.js';
 import Tarjetas from './Componentes/Paginas/Tarjetas.js';
+import Router from './Router/Router';
 
   function App() {
     // const nombre=useState("Carla"); asi se hacia originalmente, pero con useState cambia a la siguiente forma, puedo poner array, un objeto vacio, etc.
@@ -25,6 +26,7 @@ import Tarjetas from './Componentes/Paginas/Tarjetas.js';
         <>
         {/*<Contacto cambiarNombre={setNombre}/>*/}
         <h1>Hola soy APP</h1>
+        <Router/>
         {/*<button onClick={cambiarNombre}>Click App</button>*/}
         </>
   );

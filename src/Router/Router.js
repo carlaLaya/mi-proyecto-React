@@ -1,6 +1,6 @@
 import {BrowserRouter,Routes,Route} from "react-router-dom" ;
 import Home from '../Componentes/Paginas/Home';
-import Personajes from '../Componentes/Paginas/Personajes';
+import Character from '../Componentes/Paginas/Character';
 import Contacto from '../Componentes/Contacto/Contacto';
 
 export default function Router () {
@@ -8,7 +8,7 @@ export default function Router () {
     <BrowserRouter>
     <Routes>
         <Route path="/" element={<Home/>}/>
-        <Route path="/Personajes" element={<Personajes/>}/>
+        <Route path="/Character" element={<Character/>}/>
         <Route path="/Contacto" element={<Contacto/>}/>
 
     </Routes>

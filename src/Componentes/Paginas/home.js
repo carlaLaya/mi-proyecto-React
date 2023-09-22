@@ -12,7 +12,7 @@ export default function Home () {
       <p className='text-center P-2'>In this website you can know information of the characters of this animated series</p>
       <p>Also you can filter for diferent types of properties to find the character that you are looking for or send us a massage for any concern o sugestion</p>
       <h2 className='titulo2'>Lets go!</h2>
-      <Link to ="/Personajes" className='btn'>Characters</Link>
+      <Link to ="/Character" className='btn'>Characters</Link>
       <Link to="/Contacto" className='btn'>Contact</Link>
       </div>
         {/*<Footer dato={nombre}/>*/}

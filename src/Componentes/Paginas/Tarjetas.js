@@ -1,14 +1,14 @@
 
 import './Tarjetas.css';
 
-export default function Tarjetas ({nombrePersona, cambiarPersonaje}) {
+export default function Tarjetas ({nombre,imagen}) {
    
     return(
         <div>
             <div className='Tarjetas'>
-            <p>{cambiarPersonaje}</p>
-            <h4>{nombrePersona}</h4>
-           <button className='btn'>Nnow More..</button>
+            <img src={imagen} alt='imagen-personaje'/>
+            <h4>{nombre}</h4>
+           <button className='btn1'>Nnow More..</button>
            </div>
         </div>
     )

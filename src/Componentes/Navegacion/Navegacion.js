@@ -9,7 +9,7 @@ export default function Navegacion () {
               <Link to="/" className='titulo text-decoration-none'> Ricky & Morty</Link>
             <div className='botons'>
           <ul className= 'navbar-nav'>
-          <Link to ="/Personajes" className='btn'>Characters</Link>
+          <Link to ="/Character" className='btn'>Characters</Link>
           <Link to="/Contacto" className='btn'>Contact</Link>
           </ul>
           </div>

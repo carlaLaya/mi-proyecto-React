@@ -1,7 +1,7 @@
 import './Personajes.css';
 import Navegacion from '../Navegacion/Navegacion.js';
 import Tarjetas from './Tarjetas.js';
-import { useState } from 'react';
+import {useState, useEffect} from 'react';
 import { Link } from 'react-router-dom';
 
 
@@ -21,14 +21,18 @@ export default function Character () {
      let listaPersonajes=info.results;
      setPersonajes(listaPersonajes)
    }
+   useEffect(()=>{
+    guardarPersonajes()
+   }, [])
+   //Con esta funcion useEffect, se ejecura cada vez que se renderiza la funcion. Le ndico cuando ejecutar la funcion.
+
     return (
        <>
          <Navegacion className="btn" itemMenu={itemMenu}/>
          <h2>Filtros</h2>
-         <button onClick={guardarPersonajes}>Traer Info</button>
-         <section className='grid-container'>
+         <section className=' grid-container'>
          {personajes.map((personajes)=>{
-            return <Tarjetas nombre={personajes.name} imagen={personajes.image}/>
+            return <Tarjetas key={personajes.name} nombre={personajes.name} imagen={personajes.image}/>
             })};
           </section>
         </>

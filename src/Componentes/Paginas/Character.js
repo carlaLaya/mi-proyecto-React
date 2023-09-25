@@ -2,7 +2,7 @@ import './Personajes.css';
 import Navegacion from '../Navegacion/Navegacion.js';
 import Tarjetas from './Tarjetas.js';
 import {useState, useEffect} from 'react';
-import { Link } from 'react-router-dom';
+//import { Link } from 'react-router-dom';
 
 
 export default function Character () { 
@@ -15,15 +15,16 @@ export default function Character () {
       .catch(err=>console.log("Hubo un error" +err));
       return dato
     }
-   let guardarPersonajes=async()=>{
+   
+   useEffect(()=>{
+    let guardarPersonajes=async()=>{
      let info =await traerPersonajes();
      console.log(info);
      let listaPersonajes=info.results;
      setPersonajes(listaPersonajes)
    }
-   useEffect(()=>{
     guardarPersonajes()
-   }, [])
+   },[])
    //Con esta funcion useEffect, se ejecura cada vez que se renderiza la funcion. Le ndico cuando ejecutar la funcion.
 
     return (
@@ -32,7 +33,7 @@ export default function Character () {
          <h2>Filtros</h2>
          <section className=' grid-container'>
          {personajes.map((personajes)=>{
-            return <Tarjetas key={personajes.name} nombre={personajes.name} imagen={personajes.image}/>
+            return <Tarjetas key={personajes.name} data={personajes} />
             })};
           </section>
         </>

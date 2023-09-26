@@ -1,10 +1,17 @@
-
-.grid-container {
-    display: grid;
-    justify-content: space-around;
-    grid-template-columns: auto auto auto auto;
-    padding: 50px;
+.personajes{
+    display: flex;
+    flex-direction:row;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 40px;
+}
+.filtros{
+    padding: 30px;
+    color: rgb(245, 241, 241);
+}
+.d-flex {
+    justify-content: center;
 }
 h2{
-    color: rgb(36, 35, 35);
+    margin: 30px;
 }

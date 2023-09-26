@@ -1,10 +1,11 @@
+import { Fragment } from 'react';
 import './Home.css';
 import { Link } from 'react-router-dom';
 
 export default function Home () {
     return(
-     <> 
-      <div class="container-header  d-flex flex-column justify-content-center">
+     <Fragment> 
+      <div class="container-header d-flex flex-column justify-content-center">
       <div className="bg-text">
       <h1 className= "row justify-content-center"> <span>Proyect Rick & Morty</span></h1>
       <h2 className="text-center p-3">Helcome to Rick & Morty Proyect!</h2>
@@ -19,7 +20,7 @@ export default function Home () {
         {/*<Boton tituloBoton={"Characters"}/> reutilizo y cambio elnombre del boton*/}
         {/*<Boton tituloBoton={"Contact"}/>reutilizo y cambio elnombre del boton*/}
       </div>
-     </>
+     </Fragment>
     )
 }
 

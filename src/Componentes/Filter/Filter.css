@@ -1,0 +1,26 @@
+.form-check-input:checked {
+    background-color:darkblue;
+    display: block;
+    color: beige;
+
+
+}
+.form-check-input{
+  border-radius: 50px;
+  background-color: #344D67;
+  margin: 5px;
+  padding: 5px;
+    justify-content: center;
+
+}
+.form-check-label{
+    
+    border-radius: 20px;
+
+}
+.form-switch {
+    background-color: #344d67;
+    border-radius: 8px;
+    color: #6eccaf;
+   
+}

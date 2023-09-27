@@ -9,7 +9,7 @@
   width: 50%;
   padding: 60px;
   text-align: center;
-  color:#344D67;
+  color: var(--gris);
   font-size: 15px;
   }
   p{

@@ -5,6 +5,10 @@
   padding: 0px;
   font-family: 'Raleway', sans-serif;
 }
+:root {
+  --verde: #6ECCAF ;
+  --gris: #344D67;
+}
 body{
   background-image: url(./fondo.jpg);
   background-attachment: fixed;

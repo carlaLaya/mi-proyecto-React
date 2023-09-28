@@ -17,6 +17,7 @@
     background-color: #344d67;
     border-radius: 8px;
     color: var(--verde);
-    width: 20%;
-    font-weight:800
+    width: 30%;
+    font-weight:900;
+    font-size:20px;
 }

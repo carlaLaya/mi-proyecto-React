@@ -1,16 +1,18 @@
 .tarjeta{
     display: flex;
-    flex-direction:row;
     flex-wrap: wrap;
     justify-content: center;
-}
-.filtros{
-    padding: 10px;
-    color: rgb(245, 241, 241);
-}
-.d-flex {
-    justify-content: center;
-}
+}  
 h2{
-    margin: 30px;
+    margin: 10px;
+    color: aliceblue;
+    padding: 10px;
 }
+@media (max-width: 800px){
+    .filters-area{
+    background-color: #344d67;
+    border-radius: 8px;
+    justify-content: space-around;
+    padding: 15px;
+    width: 90%;
+}}

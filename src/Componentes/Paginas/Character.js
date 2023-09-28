@@ -86,12 +86,12 @@ let [filtrosAplicados,setFiltrosAplicados]=useState([]);
        <Fragment>
          <Navegacion />
          <section className= "row section-filters py-5">
-        <h2><span>Filters</span></h2>
+        <h2 className='filters-area d-flex m-2 align-items-start'>Filters</h2>
         <form className='d-flex gap-5 p-5'>
         {filtros.map((item)=>{ return<Filter key={item.nombre} valorFiltro={item.filtro} idFiltro={item.nombre} handlerChange={aplicarFiltros}/>})}
         </form>
         </section>
-         <section className='tarjeta'>
+         <section className='tarjeta d-flex'>
           {
             personajes.length>0?
             personajes.map((personajes)=>{

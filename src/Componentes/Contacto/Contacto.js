@@ -8,7 +8,7 @@ export default function Contacto () {
         <section>
             <main className='container-fluid'>
             <div className='bg-text1'>
-              <h2 className='row justify-content-center'>Contact</h2>   
+              <h4 className='row justify-content-center'>Contact</h4>   
               <p className='text-center p-3'>Leave us your information so we can contact you</p>
               <form className="row colorBLue g-3 p-4">
                 <div className="col-md-6">

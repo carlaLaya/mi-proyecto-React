@@ -14,3 +14,9 @@ background-color: rgba(92,117,146,.9) ; /* Fallback color */
 .btn{
     border-radius: 0%;
 }
+@media (max-width: 768px){
+.bg-text1{
+  width: 60%;
+  padding: 20px;
+}
+}

@@ -5,28 +5,26 @@ import './InfoCard.css';
 export default function InfoCard ({status,especie,origen,genero,setShow}) {
     return (
         <Fragment>
-             <button className="btn btn-active d-flex align-self-end m-2 btn-x-md" onClick={()=>setShow(false)}>X</button>
-            <section>
-            <div className='d-flex p-2 flex-row align-items-center'>
-            <ul class="list-group">
-                <li className="list-group-item">
-                    <h6 className="fw-bold">Character Status :</h6>
+             <button className="btn" onClick={()=>setShow(false)}>X</button>
+            <section className='flex-container'>
+            <ul className='btn-primary '>
+                <li className="p-2">
+                    <h5 className='fw-bold'>Character Status :</h5>
                     <p>{status}</p>
                     </li>
-                <li className="list-group-item">
-                    <h6 className="fw-bold">Specie :</h6>
+                <li className="p-2">
+                   <h5 className='fw-bold'>Specie :</h5>
                     <p>{especie}</p>
                     </li>
-                <li className="list-group-item">
-                    <h6 className="fw-bold">Origin :</h6>
+                <li className="p-2 ">
+                    <h5 className='fw-bold' >Origin :</h5>
                     <p>{origen}</p>
                     </li>
-                 <li className="list-group-item">
-                    <h6 className="fw-bold">Gender</h6>
+                 <li className="p-2 ">
+                    <h5 className='fw-bold'>Gender</h5>
                     <p>{genero}</p>
                     </li>
             </ul>
-            </div>
             </section>
         </Fragment>
     )

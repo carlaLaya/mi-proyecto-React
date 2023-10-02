@@ -1,9 +1,15 @@
+.container{
+    display: flex;
+    justify-content: end;
+}
+.container-fluid{
+    justify-content: center;
+}
 ul {
     color: #b1f0dc;
 }
 .titulo{
     color: #b1f0dc;
-    justify-items: center ;
     font-weight: 300;
     font-size: x-large;
 }
@@ -12,13 +18,13 @@ header{
 }
 .bg-blue {
     background-color: #344D67;
-    justify-content: space-between;
+}
+.navbar{
+    align-self: flex-end;
+}
 
-}
-.botons{
-    justify-content: end;
-    border: 2px solid #344D67;
-}
+
+
 
   
   

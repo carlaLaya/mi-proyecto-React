@@ -2,17 +2,33 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-}  
+}
+.row {
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+}
+
 h2{
     margin: 10px;
     color: aliceblue;
     padding: 10px;
 }
+
 @media (max-width: 800px){
     .filters-area{
     background-color: #344d67;
     border-radius: 8px;
-    justify-content: space-around;
-    padding: 15px;
+    padding: 30px;
     width: 90%;
-}}
+}
+.filtros{
+    justify-items: center;
+}
+.d-flex{
+text-align: center ;
+}
+
+}
+    
+

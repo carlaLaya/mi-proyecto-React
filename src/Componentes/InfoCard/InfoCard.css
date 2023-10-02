@@ -12,9 +12,6 @@
     color: #344D67;
     border: 2px solid #344D67;
 }
-.flex-column {
-    flex-direction: row;
-}
 ul {
     list-style-type: none;
     align-items: center;
@@ -22,4 +19,5 @@ ul {
 }
 .flex-container{
      display: flex;
+     flex-direction: row;
 }

@@ -21,13 +21,5 @@
     font-weight:900;
     font-size:20px;
 }
-@media (max-width: 768px) {
-    .form-check {
-        @media (max-width: 800px);
-        background-color: #344d67;
-        border-radius: 8px;
-        justify-content: space-around;
-        padding: 15px;
-        width: 90%;
-    } 
-    }
+
+   

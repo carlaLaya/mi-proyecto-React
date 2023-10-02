@@ -85,20 +85,22 @@ let [filtrosAplicados,setFiltrosAplicados]=useState([]);
     return (
        <Fragment>
          <Navegacion />
-         <section className= "row section-filters py-5">
-        <h2 className='filters-area d-flex m-2 align-items-start'>Filters</h2>
-        <form className='d-flex gap-5 p-5'>
-        {filtros.map((item)=>{ return<Filter key={item.nombre} valorFiltro={item.filtro} idFiltro={item.nombre} handlerChange={aplicarFiltros}/>})}
-        </form>
-        </section>
-         <section className='tarjeta d-flex'>
-          {
-            personajes.length>0?
-            personajes.map((personajes)=>{
-            return <Tarjetas key={personajes.name} data={personajes}/>
-            }):
-            <p className="alert alert-success" role="alert">Sorry! There are no Characters width all those properties</p>
-        }     
+          <section className= "row section-filters py-5">
+            <h2 className='filters-area d-flex m-2 align-items-center'>Filters</h2>
+            <form className='d-flex gap-5 p-5'>
+              {filtros.map((item)=>{ return<Filter key={item.nombre} valorFiltro={item.filtro} idFiltro={item.nombre} handlerChange={aplicarFiltros}/>})}
+            </form>
+          </section>
+
+          
+          <section className='row cards-section'>
+            {
+              personajes.length>0?
+              personajes.map((personajes)=>{
+              return <Tarjetas key={personajes.name} data={personajes}/>
+              }):
+              <p className="alert alert-success" role="alert">Sorry! There are no Characters width all those properties</p>
+            }     
           </section>
         </Fragment>
      )

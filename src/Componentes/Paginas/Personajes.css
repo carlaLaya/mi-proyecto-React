@@ -1,34 +1,36 @@
-.tarjeta{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
 .row {
     justify-content: center;
     display: flex;
     flex-direction: row;
 }
-
 h2{
     margin: 10px;
-    color: aliceblue;
+    color:var(--verde);
     padding: 10px;
+    font-weight: 700;
 }
+.py-5 {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+.filters-area{
+    color: var(--verde);
+    justify-content: start;
 
+}
 @media (max-width: 800px){
-    .filters-area{
+    .section-filters{
+    border-radius: 8px;
+    align-items: center;
+    flex-direction: column;
+    }
+}
+@media (max-width: 800px){
+.filters-area {
     background-color: #344d67;
     border-radius: 8px;
-    padding: 30px;
+    justify-content: space-around;
+    padding: 15px;
     width: 90%;
 }
-.filtros{
-    justify-items: center;
 }
-.d-flex{
-text-align: center ;
-}
-
-}
-    
-

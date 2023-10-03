@@ -25,6 +25,7 @@
     margin: 4px 2px;
     transition: 0.3s;
     border-radius: 40px;
+    font-weight: 600;
   }
   .btn:hover {
     background-color:#6ECCAF;

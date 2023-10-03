@@ -40,68 +40,65 @@ let [filtrosAplicados,setFiltrosAplicados]=useState([]);
     if (event.target.checked === true) {
     console.log("Aplicar filtros")
     setFiltrosAplicados([...filtrosAplicados,nombreCheckbox]);
-    //console.log(personajes)
     } else {
-    //console.log("Sacar filtros")
-
     let filtrosRestantes=filtrosAplicados.filter((el)=>el !==nombreCheckbox)
     setPersonajes(listaCompleta);
     setFiltrosAplicados(filtrosRestantes)  
   }
-
-    //console.log(nombreCheckbox);
-    //console.log(event.target.checked);
 }
-
-
    useEffect(()=>{
-    let guardarPersonajes=async()=>{
-     let info =await traerPersonajes();
-     let listaPersonajes=info.results;
-     setPersonajes(listaPersonajes);
-     setListaCompleta(listaPersonajes)
+        let guardarPersonajes=async()=>{
+        let info =await traerPersonajes();
+        let listaPersonajes=info.results;
+        setPersonajes(listaPersonajes);
+        setListaCompleta(listaPersonajes)
    }
-    guardarPersonajes();
-   },[])
+      guardarPersonajes();
+  },[])
 
    useEffect(()=> {
    filtrosAplicados.forEach((filtroNombre)=>{
   let resultado;
-  if(filtroNombre === "Alive" || filtroNombre === "Dead"){
-    resultado= personajes.filter((personaje)=>personaje.status === filtroNombre)
-    }
-    if (filtroNombre === "Female" || filtroNombre === "Male"){
-    resultado= personajes.filter((personaje)=>personaje.gender === filtroNombre)
-    }
-    if (filtroNombre === "unknown"){
-       resultado= personajes.filter((personaje)=>personaje.origin.name === filtroNombre)     
-    }
-    setPersonajes(resultado) 
-})
-  },[filtrosAplicados]);
-  console.log(filtrosAplicados)
-
+      if(filtroNombre === "Alive" || filtroNombre === "Dead"){
+        resultado= personajes.filter((personaje)=>personaje.status === filtroNombre)
+        }
+        if (filtroNombre === "Female" || filtroNombre === "Male"){
+        resultado= personajes.filter((personaje)=>personaje.gender === filtroNombre)
+        }
+        if (filtroNombre === "unknown"){
+          resultado= personajes.filter((personaje)=>personaje.origin.name === filtroNombre)     
+        }
+        setPersonajes(resultado) 
+    })
+    },[filtrosAplicados]);
    //Con esta funcion useEffect, se ejecura cada vez que se renderiza la funcion. Le ndico cuando ejecutar la funcion.
     return (
        <Fragment>
          <Navegacion />
-          <section className= "row section-filters py-5">
-            <h2 className='filters-area d-flex m-2 align-items-center'>Filters</h2>
-            <form className='d-flex gap-5 p-5'>
-              {filtros.map((item)=>{ return<Filter key={item.nombre} valorFiltro={item.filtro} idFiltro={item.nombre} handlerChange={aplicarFiltros}/>})}
-            </form>
-          </section>
-
-          
-          <section className='row cards-section'>
-            {
-              personajes.length>0?
-              personajes.map((personajes)=>{
-              return <Tarjetas key={personajes.name} data={personajes}/>
-              }):
-              <p className="alert alert-success" role="alert">Sorry! There are no Characters width all those properties</p>
-            }     
-          </section>
+          <main className='container-fluid'>
+              <section className= "row section-filters py-5">
+                  <div className='filters-area d-flex m-2 align-items-center px-5 py-2'>
+                    <h2 >Filters</h2>
+                    <a class="btn btn-filters" data-bs-toggle="collapse" href="#collapseFilters" role="button" aria-expanded="false" aria-controls="collapseFilters">
+                    <i class="bi bi-sliders"></i>
+                    </a>
+                  </div>
+                <div className='collapse filters justify-content-center flex-wrap' id= "collapseFilters">
+                    <form >
+                      {filtros.map((item)=>{ return<Filter key={item.nombre} valorFiltro={item.filtro} idFiltro={item.nombre} handlerChange={aplicarFiltros}/>})}
+                    </form>
+                </div>
+              </section>
+              <section className='row cards-section'>
+                  {
+                    personajes.length>0?
+                    personajes.map((personajes)=>{
+                    return <Tarjetas key={personajes.name} data={personajes}/>
+                    }):
+                    <p className="alert alert-success" role="alert">Sorry! There are no Characters width all those properties</p>
+                  }     
+              </section>
+            </main>
         </Fragment>
      )
  }

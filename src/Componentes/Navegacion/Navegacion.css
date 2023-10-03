@@ -10,8 +10,9 @@ ul {
 }
 .titulo{
     color: #b1f0dc;
-    font-weight: 300;
+    font-weight: 500;
     font-size: x-large;
+    font-weight: 600;
 }
 header{
     padding: 50px; 

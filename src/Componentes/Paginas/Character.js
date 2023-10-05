@@ -83,7 +83,7 @@ let [filtrosAplicados,setFiltrosAplicados]=useState([]);
                     <i class="bi bi-sliders"></i>
                     </a>
                   </div>
-                <div className='collapse filters justify-content-center flex-wrap' id= "collapseFilters">
+                <div className=' collapse filters justify-content-center flex-wrap' id= "collapseFilters">
                     <form >
                       {filtros.map((item)=>{ return<Filter key={item.nombre} valorFiltro={item.filtro} idFiltro={item.nombre} handlerChange={aplicarFiltros}/>})}
                     </form>

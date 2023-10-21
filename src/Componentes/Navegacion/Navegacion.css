@@ -1,6 +1,6 @@
 .container{
     display: flex;
-    justify-content: end;
+    flex: end;
 }
 .container-fluid{
     justify-content: center;

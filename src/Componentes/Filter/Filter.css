@@ -1,0 +1,31 @@
+.form-check-input:checked {
+    background-color: var(--gris);
+    display: block;
+    color: beige;
+}
+.form-check-input{
+    border-radius: 50px;
+    background-color: var(--gris);
+    margin: 5px;
+    padding: 5px;
+    justify-content: center;
+}
+.form-check-label{
+    border-radius: 20px;
+}
+.form-switch {
+    background-color: #344d67;
+    border-radius: 8px;
+    color: var(--verde);
+    width: 30%;
+    font-weight:900;
+    font-size:20px;
+}
+@media (max-width: 700px){
+    .filtros{
+    border-radius: 8px;
+    font-size: 15px;
+   
+} 
+}
+   

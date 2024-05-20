@@ -5,13 +5,13 @@
 //importo paquete
 import React from 'react';
 //importo carpeta de componentes
-import Boton from './Componentes/Boton/Boton.js'
-import Personajes from './Componentes/Paginas/Personajes.js';
-import Paginas from './Componentes/Paginas/Home.js';
-import Navegacion from './Componentes/Navegacion/Navegacion.js';
-import Contacto from './Componentes/Contacto/Contacto.js';
-import Tarjetas from './Componentes/Paginas/Tarjetas.js';
-import Home from './Componentes/Paginas/Home.js';
+//import Boton from './Componentes/Boton/Boton.js'
+//import Personajes from './Componentes/Paginas/Personajes.js';
+//import Paginas from './Componentes/Paginas/Home.js';
+//import Navegacion from './Componentes/Navegacion/Navegacion.js';
+//import Contacto from './Componentes/Contacto/Contacto.js';
+//import Tarjetas from './Componentes/Paginas/Tarjetas.js';
+//import Home from './Componentes/Paginas/Home.js';
 
 function App() {
     console.log()
@@ -28,9 +28,7 @@ function App() {
       <button className='btn'>Characters</button>
       <button className='btn'>Contact</button>
       </div>
-      {/*<Footer dato={nombre}/>*/}
-      {/*<Boton tituloBoton={"Characters"}/> reutilizo y cambio elnombre del boton*/}
-       {/* <Boton tituloBoton={"Contact"}/>reutilizo y cambio elnombre del boton*/}
+      
      </div>
 </>
 );

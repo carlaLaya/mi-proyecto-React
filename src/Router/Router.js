@@ -13,10 +13,5 @@ export default function Router () {
 
     </Routes>
     </BrowserRouter>
-
-
     )
 }
-/*bROWSERrOUTER ENGLOBVA EL RUTEO
-ROUTES ACCIONA COMO switch indicando todas las posibilidades
-Route ruta e si, ante un parametro*/

@@ -5,26 +5,25 @@ import './InfoCard.css';
 export default function InfoCard ({status,especie,origen,genero,setShow}) {
     return (
         <Fragment>
-            <button className="btn" onClick={()=>setShow(false)}>X</button>
+    <button className=' m-3' onClick={()=>setShow(false)}>
+                <i className="bi bi-x-lg"></i>{/* icono extraido de boostrap icon */}
+            </button>            
             <section className='flex-container'>
-                <ul className='btn-primary '>
-                    <li className="p-2">
-                        <h5 className='fw-bold'>Character Status :</h5>
-                        <p>{status}</p>
-                        </li>
-                    <li className="p-2">
-                    <h5 className='fw-bold'>Specie :</h5>
-                        <p>{especie}</p>
-                        </li>
-                    <li className="p-2 ">
-                        <h5 className='fw-bold' >Origin :</h5>
-                        <p>{origen}</p>
-                        </li>
-                    <li className="p-2 ">
-                        <h5 className='fw-bold'>Gender</h5>
-                        <p>{genero}</p>
-                        </li>
-                </ul>
+                <ul className="list-group">
+                <li className="list-group-item">
+                    <p>Character Status :</p>
+                    <p className='fs-5'>{status}</p>
+                </li>
+                <li className="list-group-item">
+                <p>Specie:</p>
+                <p className='fs-5'>{especie}</p></li>
+                <li className="list-group-item">
+                <p>Origin:</p>
+                <p className='fs-5'>{origen}</p></li>
+                <li className="list-group-item">
+                <p>Gender</p>
+                <p className='fs-5'>{genero}</p></li>
+            </ul>
             </section>
         </Fragment>
     )

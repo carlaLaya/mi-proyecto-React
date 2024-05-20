@@ -95,8 +95,10 @@ let [filtrosAplicados,setFiltrosAplicados]=useState([]);
                     personajes.map((personajes)=>{
                     return <Tarjetas key={personajes.name} data={personajes}/>
                     }):
-                    <p className="alert alert-success" role="alert">¡Lo siento! No hay información de personajes para todas esas propiedades.</p>
-                  }     
+                    <div className="alert  d-flex gap-2" role="alert">
+                    <i className="bi bi-exclamation-triangle-fill fs-5"></i>{/* icono de alerta */}
+                    <p className='m-0'>Sorry! There are no characters width all those properties</p>
+                </div>                  }     
               </section>
             </main>
         </Fragment>

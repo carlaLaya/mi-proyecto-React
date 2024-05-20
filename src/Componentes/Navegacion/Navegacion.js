@@ -13,8 +13,8 @@ export default function Navegacion () {
                 <div>
                   <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
                     <ul className= 'navbar-nav me-auto mb-2 mb-lg-0'>
-                      <Link to ="/Character" className='btn '>Characters</Link > 
-                      <Link to="/Contacto" className='btn '>Contact</Link>
+                      <Link to ="/Character" className='btn '>Personajes</Link > 
+                      <Link to="/Contacto" className='btn '>Contacto</Link>
                     </ul>
                   </div>
                 </div>

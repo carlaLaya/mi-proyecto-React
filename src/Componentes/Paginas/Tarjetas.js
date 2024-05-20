@@ -17,7 +17,7 @@ export default function Tarjetas ({data}) {
             <div className='Tarjetas .bg-secondary p-2 d-flex flex-column justify-content-between align-items-center'>
             <img src={data.image} alt='imagen-personaje'/>
             <h4 className="d-flex flex-row" >{data.name}</h4>
-            <button className={show?"d-none":"d-block" } onClick={mostrarLista} >Know More..</button>
+            <button className={show?"d-none":"d-block" } onClick={mostrarLista} >Saber más..</button>
             {show===true?<InfoCard status = {data.status} genero={data.gender} origen={data.origin.name} especie={data.species} setShow={setShow}/>:''}
            </div>
         </Fragment>

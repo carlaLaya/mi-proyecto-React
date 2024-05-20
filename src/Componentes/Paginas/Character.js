@@ -76,26 +76,26 @@ let [filtrosAplicados,setFiltrosAplicados]=useState([]);
        <Fragment>
          <Navegacion />
           <main className='container-fluid'>
-              <section className= "row section-filters py-5">
-                  <div className='filters-area d-flex m-2 align-items-center px-5 py-2'>
-                    <h2 >Filters</h2>
-                    <a class="btn btn-filters" data-bs-toggle="collapse" href="#collapseFilters" role="button" aria-expanded="false" aria-controls="collapseFilters">
-                    <i class="bi bi-sliders"></i>
-                    </a>
-                  </div>
-                <div className=' collapse filters justify-content-center flex-wrap' id= "collapseFilters">
-                    <form >
-                      {filtros.map((item)=>{ return<Filter key={item.nombre} valorFiltro={item.filtro} idFiltro={item.nombre} handlerChange={aplicarFiltros}/>})}
-                    </form>
-                </div>
-              </section>
+          <section className= "row section-filters py-5">
+  <div className='filters-area d-flex m-2 align-items-center px-5 py-2'>
+    <h2 >Filtrar</h2>
+    <a class="btn btn-filters" data-bs-toggle="collapse" href="#collapseFilters" role="button" aria-expanded="false" aria-controls="collapseFilters">
+    <i class="bi bi-sliders"></i>
+    </a>
+  </div>
+  <div className='collapse filters justify-content-center flex-wrap' id= "collapseFilters">
+    <form style={{ display: 'flex', flexDirection: 'row', flexWrap: 'wrap', justifyContent: 'space-between' }}>
+      {filtros.map((item)=>{ return<Filter key={item.nombre} valorFiltro={item.filtro} idFiltro={item.nombre} handlerChange={aplicarFiltros}/>})}
+    </form>
+  </div>
+</section>
               <section className='row cards-section'>
                   {
                     personajes.length>0?
                     personajes.map((personajes)=>{
                     return <Tarjetas key={personajes.name} data={personajes}/>
                     }):
-                    <p className="alert alert-success" role="alert">Sorry! There are no Characters width all those properties</p>
+                    <p className="alert alert-success" role="alert">¡Lo siento! No hay información de personajes para todas esas propiedades.</p>
                   }     
               </section>
             </main>

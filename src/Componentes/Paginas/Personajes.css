@@ -9,15 +9,8 @@ h2{
     padding: 10px;
     font-weight: 600;
 }
-.py-5 {
-    padding-top: 3rem;
-    padding-bottom: 3rem;
-}
-.filters-area{
-    color: var(--verde);
-    justify-content: flex-start;
 
-}
+
 
 
 @media (max-width: 1100px){
@@ -28,13 +21,13 @@ h2{
     justify-content: center;
     }
 }
-@media (max-width: 800px){
+@media (max-width: 500px){
     .filters-area {
         background-color: #344d67;
         border-radius: 8px;
         justify-content: space-around;
         padding: 15px;
-        width: 70%;
+        width: 60%;
     }
     }
    
